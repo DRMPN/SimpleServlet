@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/names")
+@WebServlet("/")
 public class DisplayNames extends HttpServlet {
 
     @Override
