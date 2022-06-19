@@ -14,9 +14,26 @@ public class DisplayNames extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         ArrayList<String> listOfNames = new ArrayList<>();
-        listOfNames.add("cat");
-        listOfNames.add("dog");
-        listOfNames.add("cow");
+        listOfNames.add("Alexander");
+        listOfNames.add("Anna");
+        listOfNames.add("Konstantin");
+        listOfNames.add("Daniil");
+        listOfNames.add("Eugene");
+        listOfNames.add("Ivan");
+        listOfNames.add("Jaroslav");
+        listOfNames.add("Michael");
+        listOfNames.add("Ramzan");
+        listOfNames.add("Valeria");
+        listOfNames.add("Daniil");
+        listOfNames.add("Eugene");
+        listOfNames.add("Egor");
+        listOfNames.add("Dmitri");
+        listOfNames.add("Gleb");
+        listOfNames.add("Mansur");
+        listOfNames.add("Margarita");
+        listOfNames.add("Maria");
+        listOfNames.add("Olga");
+        listOfNames.add("Ilya");
 
         req.setAttribute("names", listOfNames);
 

@@ -7,10 +7,14 @@
     </head>
 
     <body>
-        <h2> This course in audited by: </h2>
-        <c:forEach var="name" items="${names}">
-            <p>${name}</p>
-        </c:forEach>
+        <h2> This course is audited by: </h2>
+        <ul>
+            <c:forEach var="name" items="${names}">
+                <li>
+                    <c:out value="${name}" />
+                </li>
+            </c:forEach>
+        </ul>
     </body>
 
     </html>
