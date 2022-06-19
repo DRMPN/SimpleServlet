@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,9 +11,14 @@ import javax.servlet.http.HttpServletResponse;
 public class DisplayNames extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        req.setAttribute("names", "test");
+        ArrayList<String> listOfNames = new ArrayList<>();
+        listOfNames.add("cat");
+        listOfNames.add("dog");
+        listOfNames.add("cow");
+
+        req.setAttribute("names", listOfNames);
 
         req.getRequestDispatcher("page.jsp").forward(req, resp);
     }
