@@ -8,7 +8,7 @@
 
     <body>
         <h2> This course in audited by: </h2>
-        <c:forEach var="name" items=${names}>
+        <c:forEach var="name" items="${names}">
             <p>${name}</p>
         </c:forEach>
     </body>
