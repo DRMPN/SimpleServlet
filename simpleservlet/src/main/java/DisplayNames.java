@@ -31,12 +31,10 @@ public class DisplayNames extends HttpServlet {
         listOfNames.add("Gleb");
         listOfNames.add("Mansur");
         listOfNames.add("Margarita");
-        listOfNames.add("Maria");
         listOfNames.add("Olga");
         listOfNames.add("Ilya");
 
         req.setAttribute("names", listOfNames);
-
         req.getRequestDispatcher("page.jsp").forward(req, resp);
     }
 
